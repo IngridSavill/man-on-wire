@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+	<title>Man on wire</title>
+
+	<!-- Latest compiled and minified CSS -->
+
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="row-header">
+
+			<div class="col-md-5">
+
+				<div class="man">
+
+				<h1>MAN</h1>
+
+				</div>
+
+			</div>
+
+			<div class="col-md-2">
+
+				<div id="switch">
+
+					<div class="onoffswitch">
+				    	<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+
+				    	<label class="onoffswitch-label" for="myonoffswitch">
+				        <span class="onoffswitch-inner"></span>
+				        <span class="onoffswitch-switch"></span>
+				   		</label>
+
+				   	</div>
+
+				</div>
+
+			</div>
+
+			<div class="col-md-5">
+
+				<div class="wire">
+
+				<h1>WIRE</h1>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="row-hero">
+
+			<div class="col-md-12">
+
+				<div class="img-container">
+
+					<img src="images/no-man.jpg">
+
+				</div>
+
+					<div class="toggler">
+
+		  				<div id="effect" class="ui-widget-content ui-corner-all">
+
+			    			<div class="ui-widget-header ui-corner-all">
+
+			    			<img src="images/man.jpg" alt="man" width="150px">
+
+		    				</div>
+
+						</div>
+
+					</div>
+	
+			</div>	
+
+		</div>
+
+		<div class="row-footer-top">
+
+			<div class="col-md-12">
+
+			</div>
+
+		</div>
+
+		<div class="row-footer">
+
+			<div class="col-md-2">
+
+			</div>
+
+			<div class="col-md-2">
+
+				<h2>ABOUT</h2>
+
+			</div>
+
+			<div class="col-md-2">
+
+				<h2>TRAILER</h2>
+
+			</div>
+
+			<div class="col-md-2">
+
+				<h2>VIEWING</h2>
+
+			</div>
+
+			<div class="col-md-2">
+
+				<h2>CONTACT</h2>
+
+			</div>
+
+			<div class="col-md-2">
+
+			</div>
+			
+		</div>	
+
+	</div>
+
+	<script>
+  $(function() {
+    // run the currently selected effect
+    function runEffect() { 
+ 
+      // run the effect
+      $( "#effect" ).toggle(0).effect('bounce');
+    };
+ 
+    // set effect from select menu value
+    $( "#switch" ).click(function() {
+      runEffect();
+    });
+  });
+  </script>
+	
+</body>
+</html>

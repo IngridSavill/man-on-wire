@@ -1,0 +1,157 @@
+/*------Header starts------*/
+
+.row-header {
+    height: 140px;
+    background-color: #3f4049;
+    display: block;
+    padding-top: 12px;
+    width: 100%;
+}  
+
+.man {
+    color: #c7dbee;
+    float: right;
+    margin-right: -35px;
+    padding-top: 22px;
+}  
+
+.wire {
+    color: #c7dbee;
+    float: left;
+    margin-left: -35px;
+    padding-top: 22px;
+    margin-left: none;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+ }
+ 
+#switch {
+    width: 68px;
+    margin: 0 auto; 
+    margin-top: 50px;
+}
+
+/*------Header ends------*/
+
+/*------on/off switch starts------*/
+
+.onoffswitch {
+    position: relative; width: 68px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 3px solid #ffffff; border-radius: 20px;
+}
+
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.3s ease-in 0s; -webkit-transition: margin 0.3s ease-in 0s;
+    -o-transition: margin 0.3s ease-in 0s; transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Arial, Helvetica, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #7E7A61; color: #ffffff;
+}
+
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #7E7A61; color: #ffffff;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    display: block; width: 16px; margin: 10px;
+    background: #c7dbee;
+    border: 3px solid #3f4049; border-radius:50%;
+    position: absolute; top: 0; bottom: 0; right: 34px;
+    -moz-transition: all 0.3s ease-in 0s; -webkit-transition: all 0.3s ease-in 0s;
+    -o-transition: all 0.3s ease-in 0s; transition: all 0.3s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+/*------on/off switch ends------*/
+
+/*------Row hero starts------*/
+
+.row-hero {
+    height: 500px;
+     width: 100%;
+}
+
+.img-container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height:0;
+    bottom: 0;
+}
+
+.img-container img {
+    width:100%;
+}
+
+.toggler {
+    position: absolute;
+    margin-left: 365px;
+    margin-top: 370px;
+}
+
+/*------Row hero ends------*/
+
+
+/*------Row footer starts------*/
+
+.row-footer-top {
+    border-bottom: 1px;
+    border-style: solid;
+    color: #fbdbe3;
+    position: relative;
+    top: 363px;
+}
+
+.row-footer {
+    height: 140px;
+    display: block;
+    background: rgba(255, 255, 255, 0.3);
+    top: 363px;
+    position: relative;
+}
+
+ h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #221e1f;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*------Row footer ends------*/
+
