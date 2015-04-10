@@ -8,10 +8,13 @@
 	<!-- Latest compiled and minified CSS -->
 
 	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	
 	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	<link rel="stylesheet" href="jquery-ui.css">
+
 	<link rel="stylesheet" href="styles.css">
 
 </head>
@@ -21,6 +24,7 @@
 	<div class="container">
 
 		<div class="row-header">
+
 
 			<div class="col-md-5">
 
@@ -34,7 +38,7 @@
 
 			<div class="col-md-2">
 
-				<div id="switch">
+				<div class="switch">
 
 					<div class="onoffswitch">
 				    	<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
@@ -48,6 +52,10 @@
 
 				</div>
 
+				<audio id="boing" src="boing.mp3" preload="auto"></audio>
+				
+				<a href="javascript:play_single_sound();">
+
 			</div>
 
 			<div class="col-md-5">
@@ -57,6 +65,17 @@
 				<h1>WIRE</h1>
 
 				</div>
+
+	<div class="social">
+
+		 	   		<img src="images/flickr.png" alt="flickr">
+
+              		<img src="images/twitter.png" alt="twitter">
+
+               		<img src="images/facebook.png" alt="facebook">
+
+           		</div>
+			
 
 			</div>
 
@@ -72,17 +91,15 @@
 
 				</div>
 
-					<div class="toggler">
+					<div class="bouncing-man">
 
-		  				<div id="effect" class="ui-widget-content ui-corner-all">
+			    			<div id="effect" class="bounceOutDown">
 
-			    			<div class="ui-widget-header ui-corner-all">
+			    			<img src="images/man.png" alt="man" width="75px">
 
-			    			<img src="images/man.jpg" alt="man" width="150px">
+			    			</span>
 
 		    				</div>
-
-						</div>
 
 					</div>
 	
@@ -112,7 +129,7 @@
 
 			<div class="col-md-2">
 
-				<h2>TRAILER</h2>
+				<a href="https://youtu.be/W5aGddaC-gQ/" target="_blank"><h2>TRAILER</h2></a>
 
 			</div>
 
@@ -136,20 +153,26 @@
 
 	</div>
 
+
 	<script>
-  $(function() {
-    // run the currently selected effect
-    function runEffect() { 
- 
-      // run the effect
-      $( "#effect" ).toggle(0).effect('bounce');
-    };
- 
-    // set effect from select menu value
-    $( "#switch" ).click(function() {
-      runEffect();
-    });
-  });
+
+	$(window).load(function(){
+		
+		$("myonoffswitch").click(function(){
+
+			var play_single_sound = function(){
+
+        	document.getElementById('boing').play();
+
+    	}();
+
+			 
+		}); //click function ends
+
+	}); //window load ends
+
+
+
   </script>
 	
 </body>

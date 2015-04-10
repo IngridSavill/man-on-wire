@@ -1,7 +1,7 @@
 /*------Header starts------*/
 
 .row-header {
-    height: 140px;
+    height: 160px;
     background-color: #3f4049;
     display: block;
     padding-top: 12px;
@@ -12,27 +12,39 @@
     color: #c7dbee;
     float: right;
     margin-right: -35px;
-    padding-top: 22px;
+    padding-top: 19px;
 }  
 
 .wire {
     color: #c7dbee;
     float: left;
     margin-left: -35px;
-    padding-top: 22px;
+    padding-top: 19px;
     margin-left: none;
 }
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
  }
  
-#switch {
+.switch {
     width: 68px;
     margin: 0 auto; 
     margin-top: 50px;
+}
+
+.social {
+    text-align: right;
+     color: #ffffff;
+     opacity: 0.3;
+     padding-top: 46px;
+     padding-right: 30px;
+}
+
+.social:hover {
+    color:#ffffff;
 }
 
 /*------Header ends------*/
@@ -117,10 +129,10 @@ h1 {
     width:100%;
 }
 
-.toggler {
+.bouncing-man {
     position: absolute;
     margin-left: 365px;
-    margin-top: 370px;
+    margin-top: 416px;
 }
 
 /*------Row hero ends------*/
@@ -137,21 +149,68 @@ h1 {
 }
 
 .row-footer {
-    height: 140px;
+    height: 160px;
     display: block;
     background: rgba(255, 255, 255, 0.3);
     top: 363px;
     position: relative;
 }
 
- h2 {
+h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: bold;
-    color: #221e1f;
+    color: #3f4049;
     text-align: center;
     margin-top: 50px;
+    padding: none;
+    text-decoration: none;
+}
+
+h2:hover {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 /*------Row footer ends------*/
 
+/*------Animation begins------*/
+
+@-webkit-keyframes bounceOutDown { 
+    0% { 
+        -webkit-transform: translateY(0); 
+    } 
+
+    20% { 
+        opacity: 1; 
+        -webkit-transform: translateY(-20px); 
+    } 
+
+    100% { 
+        opacity: 0; 
+        -webkit-transform: translateY(600px); 
+    } 
+} 
+
+    @keyframes bounceOutDown { 
+    0% { 
+        transform: translateY(0); 
+    } 
+
+    20% { 
+        opacity: 1; 
+        transform: translateY(-20px); 
+    } 
+
+    100% { 
+        opacity: 0; 
+        transform: translateY(600px); 
+    } 
+} 
+
+.bounceOutDown { 
+    -webkit-animation-name: bounceOutDown; 
+    animation-name: bounceOutDown; 
+}
+
+/*------Animation begins------*/
